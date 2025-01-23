@@ -1,7 +1,10 @@
+"use client";
+
 import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../public/styles/globals.css";
 import logo from "../public/images/full-logo-black.dc3e624a01f5dc34c84d.png";
+import { requestNotificationPermission } from "../helper/pushNotification";
 
 const Home = () => {
   const linkData = [
@@ -28,6 +31,7 @@ const Home = () => {
         isLoggedIn={true}
         theme="light"
       />
+      <button onClick={requestNotificationPermission}>Notification</button>
     </>
   );
 };
