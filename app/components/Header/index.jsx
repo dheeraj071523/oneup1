@@ -66,18 +66,12 @@ const Header = ({
     };
   }, []);
 
-<<<<<<< HEAD
   const isSafari = () => {
     return (
       typeof window !== "undefined" &&
       /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent)
     );
   };
-=======
-  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-    if (isSafari) {
->>>>>>> f3af68dc1e9d8bab62acf63cf22b859b788e4e6d
 
   useEffect(() => {
     if (!isSafari()) {
@@ -102,7 +96,6 @@ const Header = ({
       });
     }
   }, []);
-    }
 
   return (
     <Wrapper theme={theme}>
