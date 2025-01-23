@@ -1,0 +1,35 @@
+{
+  "start_url": "http://localhost:3000/",
+  "name": "CodeUp",
+  "short_name": "CodeUp",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon-384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "white",
+  "background_color": "black",
+  "gcm_sender_id": "560676854221",
+  "orientation": "portrait-primary",
+  "id": "/codeup",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["reading"],
+  "description": "A platform to read and manage your content easily.",
+  "prefer_related_applications": false,
+  "iarc_rating_id": "13"
+}
