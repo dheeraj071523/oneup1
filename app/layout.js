@@ -34,6 +34,24 @@ const RootLayout = ({ children }) => {
           title="Oneup"
           aria-description="A project using the app directory."
         />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="CodeUp" />
+        <link
+          rel="apple-touch-icon"
+          sizes="192x192"
+          href="/images/icon-192.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="384x384"
+          href="/images/icon-384.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="512x512"
+          href="/images/icon-512.png"
+        />
       </head>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>

@@ -66,26 +66,35 @@ const Header = ({
     };
   }, []);
 
+  const isSafari = () => {
+    return (
+      typeof window !== "undefined" &&
+      /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent)
+    );
+  };
+
   useEffect(() => {
-    requestNotificationPermission();
+    if (!isSafari()) {
+      requestNotificationPermission();
 
-    onMessage(messaging, (payload) => {
-      console.log("Received foreground message:", payload);
-      const { title, body, icon } = payload.notification;
+      onMessage(messaging, (payload) => {
+        console.log("Received foreground message:", payload);
+        const { title, body, icon } = payload.notification;
 
-      console.log("Notification Title:", title);
-      console.log("Notification Body:", body);
-      //console.log("Notification Icon:", icon);
+        console.log("Notification Title:", title);
+        console.log("Notification Body:", body);
+        //console.log("Notification Icon:", icon);
 
-      // alert(`notification ${title} ${body}`);
+        // alert(`notification ${title} ${body}`);
 
-      new Notification(title, {
-        body: body || "Foreground Notification Body",
+        new Notification(title, {
+          body: body || "Foreground Notification Body",
+        });
+        //console.log("forground", notification);
+
+        // Show notification
       });
-      //console.log("forground", notification);
-
-      // Show notification
-    });
+    }
   }, []);
 
   return (

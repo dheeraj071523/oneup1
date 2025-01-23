@@ -22,5 +22,7 @@ export const requestNotificationPermission = async () => {
     } else if (permission === "denied") {
       alert('permission === "denied"');
     }
+  } else {
+    console.error("Notifications are not supported in this browser.");
   }
 };
