@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 const cachename = "site-static-v5";
 const dynamicCachename = "site-dynamic-v5";
+=======
+const cachename = "site-static-v3";
+const dynamicCachename = "site-dynamic-v3";
+>>>>>>> f3af68dc1e9d8bab62acf63cf22b859b788e4e6d
 const assets = [
   "/",
   "/styles/globals.css",

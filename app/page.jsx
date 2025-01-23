@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../public/styles/globals.css";
 import logo from "../public/images/full-logo-black.dc3e624a01f5dc34c84d.png";
 import { requestNotificationPermission } from "../helper/pushNotification";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 
 const isSafari = () => {
@@ -13,6 +14,8 @@ const isSafari = () => {
   }
   return false;
 };
+=======
+>>>>>>> f3af68dc1e9d8bab62acf63cf22b859b788e4e6d
 
 const Home = () => {
   const [isSafariBrowser, setIsSafariBrowser] = useState(false);
@@ -44,7 +47,10 @@ const Home = () => {
         isLoggedIn={true}
         theme="light"
       />
+<<<<<<< HEAD
       {isSafariBrowser && <p>You are using Safari browser.</p>}
+=======
+>>>>>>> f3af68dc1e9d8bab62acf63cf22b859b788e4e6d
       <button onClick={requestNotificationPermission}>Notification</button>
     </>
   );
