@@ -66,6 +66,10 @@ const Header = ({
     };
   }, []);
 
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+    if (isSafari) {
+
   useEffect(() => {
     requestNotificationPermission();
 
@@ -87,6 +91,7 @@ const Header = ({
       // Show notification
     });
   }, []);
+    }
 
   return (
     <Wrapper theme={theme}>
