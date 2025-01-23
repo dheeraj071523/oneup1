@@ -1,5 +1,5 @@
 const cachename = "site-static-v2";
-const dynamicCachename = "site-dynamic-v1";
+const dynamicCachename = "site-dynamic-v2";
 const assets = [
   "/",
   "/styles/globals.css",
